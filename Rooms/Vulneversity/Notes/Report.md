@@ -1,4 +1,4 @@
-<center> <h1>Vulneversity Write Up</h1> </center>
+<center><h1>Vulneversity Write Up</h1></center>
 
 # Task 1 ⇒ Deploy the machine
 IP: ```10.10.255.221```
