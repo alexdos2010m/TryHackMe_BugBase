@@ -92,12 +92,16 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
 2021/08/14 11:58:22 Finished
 ===============================================================
 ```
-![[form_internal.png]]
+<!-- ![[form_internal.png]] -->
+<img src = 'assets/img/form_internal.png'>
 # Task 4⇒ Compromise the webserver
-![[burp_intercept.png]]
-![[intruder.png]]
+<img src = 'assets/img/burp_intercept.png'>
+<!-- ![[burp_intercept.png]] -->
+<img src = 'assets/img/intruder.png'>
+<!-- ![[intruder.png]] -->
 ### Reverse PHP Shell:
-![[form_internal_phtml.png]]
+<img src = 'assets/img/form_internal_phtml.png'>
+<!-- ![[form_internal_phtml.png]] -->
 [reverse PHP](https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php)
 
 ```
@@ -137,7 +141,8 @@ usr
 var
 vmlinuz
 ```
-![[task4.png]]
+<img src = 'assets/img/task4.png'>
+<!-- ![[task4.png]] -->
 ```
 $ cd home
 $ ls
