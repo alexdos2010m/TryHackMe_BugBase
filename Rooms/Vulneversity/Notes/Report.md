@@ -143,6 +143,7 @@ vmlinuz
 ```
 <img src = 'assets/img/task4.png'>
 <!-- ![[task4.png]] -->
+
 ```
 $ cd home
 $ ls
