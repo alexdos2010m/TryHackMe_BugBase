@@ -151,6 +151,7 @@ $ cd bill
 $ ls
 user.txt
 ```
+
 `$ cat user.txt 
 8bd7992fbe8a6ad22a63361004cfcedb`
 # Task 5⇒ Privilege Escalation
