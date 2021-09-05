@@ -13,7 +13,7 @@ import threading
 import sys
 import os
 
-threads = 5
+threads = 10
 resume_word = None
 # username = "admin"
 headers = {}
@@ -138,7 +138,7 @@ class BruteParser(HTMLParser):
 
 print("[*] Started HTML Form Brute-Forcer Script")
 print("[*] Building Password Queue")
-passwd_q = build_passwd_q("probable-v2-top12000.txt")
+passwd_q = build_passwd_q("xato-net-10-million-passwords-1000000.txt")
 if passwd_q.qsize():
     print("[*] Password Queue Build Successful")
     attempt_brute_force = BruteForcer(passwd_q)
